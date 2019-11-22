@@ -1,0 +1,18 @@
+.wholeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    background-color:gray;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.displayContainer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
