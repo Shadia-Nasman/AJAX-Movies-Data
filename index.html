@@ -6,27 +6,45 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="wholeContainer">
-    <div id="searchContainer">
-        <label for="nameSearch">Name</label>
+<div id="wholeContainer">
+    <div id="searchContainer" class="navbar navbar-dark bg-dark" >
+        <label for="nameSearch"  class="font-weight-bolder text-light">Name</label>
         <input class="SearchControl" type="write movie name" id="nameSearch" />
-        <label for="typeSearch">Type</label>
-        <input class="SearchControl" type="write movie type" id="typeSearch" />
-        <button class="SearchControl" id="run">search</button>
+        <label for="typeSearch" class="font-weight-bolder text-light">Type</label>
+        <!-- <input class="SearchControl" type="write movie type" id="typeSearch" /> -->
+<!-- ///////////////////////////////// -->
+<select id="typeSearch" class="btn btn-danger dropdown-toggle dropdown-toggle-split font-weight-bolder">
+ 
+    <option value="movie">movie</option>
+    <option value="series">series</option>
+    <option value="episode">episode</option>
+  </select>
+
+
+
+<!-- //////////////////////////////// -->
+
+
+
+        <button class="btn btn-danger font-weight-bolder" id="run">search</button>
     </div>
 
-    <img id="movie-Poster" src="./img/mainImg.jpg" alt="mainImg">
+    <!-- <img id="movie-Poster" src="./img/mainImg.jpg" alt="mainImg"> -->
     <div class="displayContainer">
-        <div class="movie-Img"></div>
-        <div class="movie-Title"></div>
-        <div class="movie-Year"></div>
-        <div class="movie-Type"></div>
+        <div class="displayElements">
+            <div class="movie-Img"></div>
+            <div class="movie-Title"></div>
+            <div class="movie-Year"></div>
+            <div class="movie-Type"></div>
+        </div>
+            <div id="target"></div>
     </div>
-    <div id="target"></div>
 </div>
 
     <script src="./js/app.js"></script>
